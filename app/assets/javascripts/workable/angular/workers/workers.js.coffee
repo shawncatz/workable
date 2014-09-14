@@ -3,3 +3,8 @@ workable.factory 'Workers', ['$resource', ($resource) ->
 
   }
 ]
+workable.config ['$routeProvider', ($routeProvider) ->
+  $routeProvider
+  .when '/workers/queue',
+    templateUrl: "/assets/workable/angular/workers/queue.html"
+]
