@@ -1,11 +1,6 @@
 class Workable::Base
-
   include Sidekiq::Worker
   sidekiq_options retry: false, backtrace: true
-
-  def logger
-    Logra.jobs
-  end
 
   protected
 
@@ -83,14 +78,14 @@ class Workable::Base
     Rails.cache.delete(key)
   end
 
-  class Workers::Base::Debug < StandardError
+  class Workable::Base::Debug < StandardError
   end
-  class Workers::Base::Info < StandardError
+  class Workable::Base::Info < StandardError
   end
-  class Workers::Base::Warning < StandardError
+  class Workable::Base::Warning < StandardError
   end
-  class Workers::Base::Error < StandardError
+  class Workable::Base::Error < StandardError
   end
-  class Workers::Base::Fatal < StandardError
+  class Workable::Base::Fatal < StandardError
   end
 end
