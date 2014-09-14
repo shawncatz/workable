@@ -7,8 +7,8 @@ module Workable
 
     initializer 'workable_sidekiq' do
       require 'sidekiq'
-      require 'sidekiq/scheduler'
-      require 'sidekiq/failures'
+      require 'sidekiq-scheduler'
+      require 'sidekiq-failures'
     end
   end
 end

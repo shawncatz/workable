@@ -2,6 +2,10 @@ class Workable::Base
   include Sidekiq::Worker
   sidekiq_options retry: false, backtrace: true
 
+  def logger
+    @logger ||= Logger.new STDOUT
+  end
+
   protected
 
   def synchronize(key)
