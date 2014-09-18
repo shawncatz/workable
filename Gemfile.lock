@@ -2,10 +2,10 @@ PATH
   remote: .
   specs:
     workable (0.1.0)
-      rails (~> 4.1.5)
+      rails (~> 4.1.6)
       sidekiq (~> 3.2.2)
       sidekiq-failures (~> 0.4.3)
-      sidekiq-scheduler (~> 1.0)
+      sidekiq-scheduler (~> 1)
       sinatra (~> 1.4.5)
       slim (~> 2.0.3)
 
@@ -78,8 +78,8 @@ GEM
       redis (~> 3.0, >= 3.0.4)
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
-    sidekiq (3.2.2)
-      celluloid (>= 0.15.2)
+    sidekiq (3.2.5)
+      celluloid (= 0.15.2)
       connection_pool (>= 2.0.0)
       json
       redis (>= 3.0.6)
