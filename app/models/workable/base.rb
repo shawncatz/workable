@@ -33,39 +33,6 @@ class Workable::Base
     end
   end
 
-  def flash(title, message, options={})
-    o = {faye: true, plex: false}.merge(options)
-    Services::Faye.flash(title, message) if o[:faye]
-    Services::Plex.info(title, message) if o[:plex]
-    logger.info "flash: #{title} - #{message}"
-  end
-
-  def info(msg, options={})
-    o = {faye: false, plex: false}.merge(options)
-    Services::Faye.info(self.class.name, msg, o[:faye])
-    Services::Plex.info(self.class.name, msg) if o[:plex]
-    logger.info("#{self.class.name} #{msg}")
-  end
-
-  def warn(msg, options={})
-    o = {faye: false, plex: false}.merge(options)
-    Services::Faye.warn(self.class.name, msg, o[:faye])
-    Services::Plex.warn(self.class.name, msg) if o[:plex]
-    logger.warn("#{self.class.name} #{msg}")
-  end
-
-  def error(msg, options={})
-    o = {faye: false, plex: false}.merge(options)
-    Services::Faye.error(self.class.name, msg, o[:faye])
-    Services::Plex.error(self.class.name, msg) if o[:plex]
-    logger.error("#{self.class.name} #{msg}")
-  end
-
-  def error!(e)
-    error e.message
-    raise e
-  end
-
   private
 
   def lock(key)
