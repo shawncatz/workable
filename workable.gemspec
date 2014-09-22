@@ -19,6 +19,8 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.1.6"
 
+  s.add_dependency 'activesupport', '~> 4.1.6'
+
   s.add_dependency 'sidekiq', '~> 3.2.2'
   s.add_dependency 'sidekiq-failures', '~> 0.4.3'
   s.add_dependency 'sidekiq-scheduler', '~> 1'

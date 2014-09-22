@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     workable (0.1.0)
+      activesupport (~> 4.1.6)
       rails (~> 4.1.6)
       sidekiq (~> 3.2.2)
       sidekiq-failures (~> 0.4.3)
