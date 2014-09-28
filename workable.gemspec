@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'sidekiq', '~> 3.2.2'
   s.add_dependency 'sidekiq-failures', '~> 0.4.3'
   s.add_dependency 'sidekiq-scheduler', '~> 1'
+  s.add_dependency 'sidekiq-unique-jobs', '~> 3.0.2'
   s.add_dependency 'sinatra', '~> 1.4.5'
   s.add_dependency 'slim', '~> 2.0.3'
 

@@ -9,6 +9,7 @@ module Workable
       require 'sidekiq'
       require 'sidekiq-scheduler'
       require 'sidekiq-failures'
+      require 'sidekiq-unique-jobs'
     end
   end
 end
