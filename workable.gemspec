@@ -21,12 +21,12 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'activesupport', '~> 4.1.6'
 
-  s.add_dependency 'sidekiq', '< 4'
-  s.add_dependency 'sidekiq-failures', '~> 0.4.3'
-  s.add_dependency 'sidekiq-scheduler', '~> 1'
-  s.add_dependency 'sidekiq-unique-jobs', '~> 3.0.2'
-  s.add_dependency 'sinatra', '~> 1.4.5'
-  s.add_dependency 'slim', '~> 2.0.3'
+  s.add_dependency 'sidekiq', '< 5'
+  s.add_dependency 'sidekiq-failures', '~> 1.0.0'
+  s.add_dependency 'sidekiq-scheduler', '~> 3.0.0'
+  s.add_dependency 'sidekiq-unique-jobs', '~> 5.0.10'
+  s.add_dependency 'sinatra', '~> 1.4.7'
+  s.add_dependency 'slim', '3.0.9'
 
   s.add_development_dependency "sqlite3"
 end
