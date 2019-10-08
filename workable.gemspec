@@ -17,10 +17,8 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "4.1.6"
-
-  s.add_dependency 'activesupport', '~> 4.1.6'
-
+  s.add_dependency "rails", "4.2.11.1"
+  s.add_dependency 'activesupport', '~> 4.2.11.1'
   s.add_dependency 'sidekiq', '< 5'
   s.add_dependency 'sidekiq-failures', '~> 1.0.0'
   s.add_dependency 'sidekiq-scheduler', '~> 3.0.0'
